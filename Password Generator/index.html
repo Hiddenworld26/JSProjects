@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <input id = "p" class="title" type="text" value="Password" readonly>
+
+            <div class="row">
+                <br>
+                <p>Password Length <span> <input id="len" type="number" value="10" max="30" min="2"></span></p>
+                <br>
+                <p>Contains Uppercase <span><input id="cu" type="checkbox"></span></p>
+                <br>
+                <p>Contains Lowercase <span><input id="cl" type="checkbox"></span> </p>
+                <br>
+                <p>Contains Numbers <span><input id="pn" type="checkbox"></span> </p>
+                <br>
+                <p>Contains Symbols <span><input id="s" type="checkbox"></span> </p>
+            </div>
+            <br>
+            <button onclick="genpass()">Generate Password</button>
+           
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
